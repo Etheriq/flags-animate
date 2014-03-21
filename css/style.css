@@ -1,7 +1,7 @@
 .flags {
     position: relative;
     width: 800px;
-    left: 50px;
+    margin: 0 auto;
 }
 .list-flags {
     list-style: none;
@@ -18,5 +18,5 @@
     /*position: relative;*/
     /*top: 0;*/
 /*}*/
-.flags li { float: left; margin-left: 5px; background-color: pink; }
+.flags li { float: left; margin: 5px; background-color: pink; }
 .round-left { float: left; display: inline; }
