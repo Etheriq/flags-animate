@@ -1,0 +1,22 @@
+.flags {
+    position: relative;
+    width: 800px;
+    left: 50px;
+}
+.list-flags {
+    list-style: none;
+}
+/*#de { left: 0px; width: 30px; background: url(../img/flg-sprited.gif) 0 0 no-repeat; }*/
+/*#isp { left: 30px; width: 30px; background: url(../img/flg-sprited.gif) -30px 0 no-repeat; }*/
+/*#it { left: 60px; width: 30px; background: url(../img/flg-sprited.gif) -60px 0 no-repeat; }*/
+/*#gb { left: 90px; width: 30px; background: url(../img/flg-sprited.gif) -90px 0 no-repeat; }*/
+/*#fr { left: 120px; width: 30px; background: url(../img/flg-sprited.gif) -120px 0 no-repeat; }*/
+/*#hol { left: 150px; width: 30px; background: url(../img/flg-sprited.gif) -150px 0 no-repeat; }*/
+
+/*.flags ul*/
+/*{*/
+    /*position: relative;*/
+    /*top: 0;*/
+/*}*/
+.flags li { float: left; margin-left: 5px; background-color: pink; }
+.round-left { float: left; display: inline; }
