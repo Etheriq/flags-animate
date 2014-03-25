@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    var roundTime = 500;
     var flags = $(".flags-ul-list").children();
     var liCount = flags.children().length;
     var sumWidthLi = 0;
@@ -42,7 +43,7 @@ $(document).ready(function(){
                     opacity: 0,
                     left: '-=100'
                 },
-                1000,
+                roundTime,
                 function(){
                     firstLi.remove();
                 });
@@ -53,7 +54,7 @@ $(document).ready(function(){
                 $(this).animate({
                         left: '-='+firstLiWidth
                     },
-                    1000)
+                    roundTime)
             });
         }
         function lastLiDo()
@@ -71,7 +72,7 @@ $(document).ready(function(){
                     opacity:1,
                     left: z
                 },
-                1000);
+                roundTime);
         }
         var callbacks = $.Callbacks();
         callbacks.add(firstLiDo());
@@ -92,7 +93,7 @@ $(document).ready(function(){
                     opacity: 0,
                     left: '+=100'
                 },
-                1000,
+                roundTime,
                 function(){
                     lastLi.remove();
                 });
@@ -103,7 +104,7 @@ $(document).ready(function(){
                 $(this).animate({
                         left: '+=' + lastLiWidth
                     },
-                    1000)
+                    roundTime)
             });
         }
         function firstLiDo()
@@ -117,7 +118,7 @@ $(document).ready(function(){
                     opacity:1,
                     left: 0
                 },
-                1000);
+                roundTime);
         }
         var callbacks = $.Callbacks();
         callbacks.add(lastLiDo());
