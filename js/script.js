@@ -3,6 +3,7 @@ $(document).ready(function(){
     var liCount = flags.children().length;
     var sumWidthLi = 0;
     var marginLi = parseInt(flags.first().css("margin")) * 4;
+    var heightLi = flags.first().outerHeight(true) + marginLi;
     var maxWidthArray = [];
 
     for(var i = 0; i<liCount; i++) {
@@ -16,7 +17,7 @@ $(document).ready(function(){
     console.log('sum width li = ' + sumWidthLi);
 
     sumWidthLi +=maxWidthLi;
-    $(".flags").css("width", sumWidthLi);
+    $(".flags").css({width: sumWidthLi, height: heightLi});
     $(flags).css("width", maxWidthLi);
 
     var liLeftStep = Math.round(sumWidthLi / liCount);

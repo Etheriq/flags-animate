@@ -5,5 +5,5 @@
 .flags-ul-list { position: relative; list-style: none; margin: 0; padding: 0; }
 .flags li { position: absolute; display: inline-block; left: 0; margin: 5px; }
 
-.round-left {display: inline-block; vertical-align: top; margin-top: 47px; cursor: pointer; }
-.round-right {display: inline-block; vertical-align: top; margin-top: 47px; cursor: pointer; }
+.round-left {display: inline-block; vertical-align: top; margin-top: 25px; cursor: pointer; }
+.round-right {display: inline-block; vertical-align: top; margin-top: 25px; cursor: pointer; }
